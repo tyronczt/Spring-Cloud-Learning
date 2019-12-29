@@ -1,0 +1,11 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: eureka-client-consumer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://tyron:123456@localhost:8888/eureka/
