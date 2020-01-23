@@ -14,7 +14,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
     /**
      * @Description: 高版本的丢弃了
      * security:
