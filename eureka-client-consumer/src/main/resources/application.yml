@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: eureka-client-consumer
+  # 多个接口上的@FeignClient(“相同服务名”)会报错：name has already been defined and overriding is disabled。
+  # 设置 为true ,即 允许 同名
+  main:
+    allow-bean-definition-overriding: true
 
 eureka:
   client:
